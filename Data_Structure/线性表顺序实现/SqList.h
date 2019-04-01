@@ -34,18 +34,13 @@ int ListLength(SqList L);
 ElemType GetElem(SqList L, int i);
 	//初始条件：线性表L已存在，1<=i<=ListLength(L)。
  
-int LocateElem(SqList L, int e, bool (*equal)(ElemType, ElemType));
-	//初始条件：线性表L已存在，compare()是数据元素判定函数。
-	//返回L中第一个与e满足关系compare()的数据元素的位序。若这样的数据元素不存在，则返回值为0.
- 
- 
 Status ListInsert(SqList &L, int i, ElemType e);
 	//初始条件：线性表L已存在，1<=i<=ListLength(L)+1.
 	//操作结果：在L中第i个位置之前插入新的数据元素e，L的长度加1.
  
-Status ListDelete(SqList &L, int i, ElemType &e);
+ElemType ListDelete(SqList &L, int i);
 	//初始条件：线性表L已存在且非空，1<=i<=ListLength(L).
-	//操作结果：删除L的第i个数据元素，并用e返回其值，L的长度减1.
+	//操作结果：删除L的第i个数据元素，并返回删除的值 
  
 
 void PrintList(SqList L);
