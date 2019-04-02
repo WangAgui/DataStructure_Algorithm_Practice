@@ -35,8 +35,6 @@ class LList{
 		//插入操作，将值为x的新结点插入到第i个位置上
 		Status LinkInsert(ElemType x,int i);
 		
-		
-		 
 		//打印链表里的内容
 		void Display();
 	
