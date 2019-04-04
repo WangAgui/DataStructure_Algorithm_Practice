@@ -1,5 +1,5 @@
 [Project]
-FileName=单链表.dev
+FileName=链表.dev
 Name=单链表
 Type=1
 Ver=2
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=4
+UnitCount=5
 
 [VersionInfo]
 Major=1
@@ -82,6 +82,16 @@ BuildCmd=
 
 [Unit1]
 FileName=main.cpp
+CompileCpp=1
+Folder=
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit5]
+FileName=doubleLinkList.h
 CompileCpp=1
 Folder=
 Compile=1

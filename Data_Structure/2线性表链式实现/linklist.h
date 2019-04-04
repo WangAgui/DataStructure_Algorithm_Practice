@@ -13,7 +13,7 @@ typedef struct LNode{
 
 class LList{
 	private:
-		//只需要维护一个表头，表尾 
+		//只需要维护一个表头，表尾，两个指针 
 		LNode *head;
 		LNode *tailor;
 		int length;	
@@ -21,7 +21,7 @@ class LList{
 		//初始化，建表 
 		LList()
 		{
-			head = (LNode*)malloc(sizeof(LNode));
+			head = (LNode*)malloc(sizeof(LNode));//创建一个空的，头节点 
 			tailor = head;//最开始的时候，链表为空，表尾指向表头 
 			head->next = NULL;
 			length = 0;
