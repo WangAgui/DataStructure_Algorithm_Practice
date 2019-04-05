@@ -1,6 +1,6 @@
 [Project]
-FileName=Á´±í.dev
-Name=µ¥Á´±í
+FileName=Stack.dev
+Name=Stack
 Type=1
 Ver=2
 ObjFiles=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=6
+UnitCount=4
 
 [VersionInfo]
 Major=1
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit2]
-FileName=common.h
+FileName=SqStack.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -61,17 +61,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit3]
-FileName=linklist.h
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit4]
-FileName=linklist.cpp
+FileName=common.h
 CompileCpp=1
 Folder=
 Compile=1
@@ -90,18 +80,8 @@ Priority=1000
 OverrideBuildCmd=0
 BuildCmd=
 
-[Unit5]
-FileName=doubleLinkList.h
-CompileCpp=1
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
-
-[Unit6]
-FileName=doublelist.cpp
+[Unit4]
+FileName=SqStack.cpp
 CompileCpp=1
 Folder=
 Compile=1

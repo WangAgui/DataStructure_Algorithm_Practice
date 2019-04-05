@@ -1,15 +1,15 @@
-# Project: µ¥Á´±í
+# Project: Stack
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe -D__DEBUG__
 CC       = gcc.exe -D__DEBUG__
 WINDRES  = windres.exe
-OBJ      = main.o linklist.o doublelist.o
-LINKOBJ  = main.o linklist.o doublelist.o
+OBJ      = main.o SqStack.o
+LINKOBJ  = main.o SqStack.o
 LIBS     = -L"D:/DEV/Dev-Cpp/MinGW64/lib" -L"D:/DEV/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
 INCS     = -I"D:/DEV/Dev-Cpp/MinGW64/include" -I"D:/DEV/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/DEV/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"D:/DEV/Dev-Cpp/MinGW64/include" -I"D:/DEV/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/DEV/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/DEV/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = Á´±í.exe
+BIN      = Stack.exe
 CXXFLAGS = $(CXXINCS) -g3
 CFLAGS   = $(INCS) -g3
 RM       = rm.exe -f
@@ -27,8 +27,5 @@ $(BIN): $(OBJ)
 main.o: main.cpp
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
 
-linklist.o: linklist.cpp
-	$(CPP) -c linklist.cpp -o linklist.o $(CXXFLAGS)
-
-doublelist.o: doublelist.cpp
-	$(CPP) -c doublelist.cpp -o doublelist.o $(CXXFLAGS)
+SqStack.o: SqStack.cpp
+	$(CPP) -c SqStack.cpp -o SqStack.o $(CXXFLAGS)
